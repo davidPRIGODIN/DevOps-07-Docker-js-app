@@ -1,4 +1,4 @@
-## demo app - developing with Docker
+# DevOps-07-Docker-js-app
 
 This demo app shows a simple user profile app set up using 
 - index.html with pure js and css styles
@@ -70,3 +70,8 @@ Step 5: access the nodejs application from browser
     docker build -t my-app:1.0 .       
     
 The dot "." at the end of the command denotes location of the Dockerfile.
+
+## Acknowledgements
+
+This demo project was created as part of the DevOps Bootcamp by **TechWorld with Nana**.<br>
+Many thanks to Nana for creating such a comprehensive and practical learning experience.
