@@ -23,7 +23,7 @@ Step 3: start mongo-express
     
     docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password --net mongo-network --name mongo-express -e ME_CONFIG_MONGODB_SERVER=mongodb -e ME_CONFIG_MONGODB_URL=mongodb://mongodb:27017 mongo-express   
 
-_NOTE: creating docker-network in optional. You can start both containers in a default network. In this case, just emit `--net` flag in `docker run` command_
+_NOTE: creating docker-network is optional. You can start both containers in a default network. In this case, just emit `--net` flag in `docker run` command_
 
 Step 4: open mongo-express from browser
 
@@ -47,7 +47,7 @@ Step 7: Access you nodejs application UI from browser
 
 Step 1: start mongodb and mongo-express
 
-    docker-compose -f docker-compose.yaml up
+    docker compose -f docker-compose.yaml up
     
 _You can access the mongo-express under localhost:8080 from your browser_
     
